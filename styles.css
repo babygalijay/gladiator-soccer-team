@@ -1,0 +1,293 @@
+
+.top-bar {
+  background: linear-gradient(rgba(30, 38, 54, 1), rgba(30, 38, 54, 0));
+  font-size: 13px;
+  height: 57px;
+}
+
+.top-bar i,
+.top-bar small {
+  color: #7591bb; /* Icon*/
+
+}
+
+.top-bar a:hover {
+  color: #f7c32e;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(rgba(30, 38, 54, 1), rgba(30, 38, 54, 0));
+  font-size: 14px;
+  height: 131px;
+  position: relative;
+}
+
+/* Live Match Score */
+.navbar .live-match {
+  background: linear-gradient(rgba(0, 38, 119, 1), rgba(0, 38, 119, 0.8));
+  padding: 10px 15px;
+  border-radius: 5px;
+  width: 308px;
+  height: 131px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.live-match .score {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+
+.live-match .team-logo {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: white;
+  padding: 2px;
+}
+/* Hero Section with diagonal cut */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 60px 0;
+  overflow: hidden;
+  color: white;
+  background: #1E2636; /* Left side solid color */
+}
+
+/* Right side diagonal cut */
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;  /* adjust width of the right side */
+  height: 100%;
+  background:
+    linear-gradient(rgba(15,23,42,0.7), rgba(15,23,42,0.7));
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+  z-index: 1;
+}
+
+/* Bring content above backgrounds */
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Hero Title */
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #3B82F6, #EF4444, #F97316);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtitle */
+.hero-subtitle {
+  font-size: 1rem;
+  color: #d1d5db;
+  margin-top: 15px;
+}
+
+/* Hero Image */
+.hero .hero-image {
+  background: #0f172a;
+  border-radius: 100%;
+  padding: 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 3;
+}
+
+.hero .hero-image img {
+  border-radius: 50%;
+  display: block;
+  max-width: 500px;
+  height: auto;
+}
+
+/* Button */
+.btn-primary {
+  border-radius: 30px;
+  background: #2563eb;
+  border: none;
+  padding: 10px 25px;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero::after {
+    clip-path: none;   /* remove diagonal on small screens */
+    width: 100%;
+  }
+
+  .hero .hero-image img {
+    max-width: 300px;
+    margin-top: 20px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.85rem;
+  }
+}
+
+
+/*upcoming matches section*/
+
+
+.upcoming-matches {
+  background: linear-gradient(231.26deg, #001F47 0%, #192233 88.24%);
+
+}
+
+/* Section Title */
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.gamepad-wrapper {
+
+   border: 2px solid rgba(255, 255, 255, 1);
+   padding: 10px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 83px;
+   height: 83px;
+   top: 1233px;
+   left: 229px;
+   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+
+.gamepad-wrapper img {
+width: 83px;
+height: 83px;
+opacity: 1;
+border-width: 1px;
+
+}
+
+
+/* Day Buttons */
+.btn-day {
+   background: rgba(61, 85, 134, 1);
+   color: #fff;
+   border-radius: 25px;
+   padding: 5px 15px;
+   margin-right: 8px;
+   border: none;
+   transition: 0.3s;
+}
+
+.btn-day.active,
+.btn-day:hover {
+  background: #2563eb;
+}
+
+/* Semi Final Row */
+.semi-final img {
+  border-radius: 50%;
+  background: #1e2636;
+  padding: 5px;
+}
+
+.match-header {
+  font-size: 0.9rem;
+  border-bottom: 1px solid #1e2636;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.match-header i {
+  color: #9ca3af;
+  margin-right: 5px;
+}
+
+/* Divider Line */
+.divider {
+  width: 2px;
+  height: 33px;
+  background-color: #374151;
+  margin: 0 10px;
+}
+
+
+/* Match Cards */
+.match-card {
+  background: #1e2636;
+  border-radius: 10px;
+  color: #fff;
+  transition: transform 0.3s ease;
+  gap: 10px;
+}
+
+.match-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Club Logos */
+.club-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* Reminder Button */
+.btn-danger {
+  background: #ef4444;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-size: 0.85rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .upcoming-matches .row {
+    text-align: center;
+  }
+  .match-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  .match-header {
+    flex-direction: column;
+    gap: 5px;
+  }
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gladiator Soccer Team</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar text-white py-1">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap">
+    <div class="d-flex align-items-center gap-3 flex-wrap">
+      <small><i class="fas fa-phone-alt me-1"></i> 0161-669-6279</small>
+      <small><i class="fas fa-envelope me-1"></i> info@soccergladiators.com</small>
+      <small><i class="fas fa-clock me-1"></i> Mon - Sat: 9:00 - 17:00 Sunday CLOSED</small>
+    </div>
+    <div class="d-flex gap-2">
+  <a href="#" class="text-white">
+<img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1757416796/cc6d98da6be4a3e59203b9089e34a805d941be03_p66qvs.png" alt="YouTube" width="29" height="29">
+  </a>
+  <a href="#" class="text-white">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1757416786/50f851aa8f1e7357e18678d933c0053e6cae435c_b6vapx.png" alt="Instagram" width="29" height="29">
+  </a>
+  <a href="#" class="text-white">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1757416782/bb2ed46bfbb7b019a3c2c3e36050f11661d6ac08_x9opg1.png" alt="Facebook" width="29" height="29">
+  </a>
+</div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1757416839/af0af67bc2f6e9dca28e2db88cf8ba60be0c0f10_bsqvpb.png" alt="Gladiator Soccer" height="40" class="me-2">
+    </a>
+
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu Items -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#">UPCOMING MATCHES</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">DOWNLOAD</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">FEATURES</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">HOW IT WORKS</a></li>
+      </ul>
+
+      <!-- Live Match Score -->
+      <div class="live-match text-center mx-3 d-flex align-items-center">
+        <small class="text-white me-2">LIVE MATCH SCORE</small>
+        <div class="d-flex align-items-center">
+          <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1757416822/44ca88e9cc57d5522ab178f1a749cf10db44b51a_hz8mai.png" alt="Melbourne" class="team-logo me-1">
+          <span class="score text-white me-3" id="team1-score">02</span>
+          <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1757416826/c7890868edbb34d9ea55cbc9c08770142d4ebce4_xec4gj.png" alt="Oslo" class="team-logo me-1">
+          <span class="score text-white" id="team2-score">04</span>
+        </div>
+      </div>
+
+      <!-- Right Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">TESTIMONIES</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">CUSTOMISE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero d-flex align-items-center">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Left Side: Text -->
+      <div class="col-lg-6 col-md-6 text-white text-center text-md-start mb-4 mb-md-0">
+        <h1 class="hero-title">
+          SOCCER <br> GLADIATORS <br> 2023
+        </h1>
+        <p class="hero-subtitle">
+          World class virtual Fifa game competition <br>
+          for top Fifa football gamers in Africa
+        </p>
+        <a href="#" class="btn btn-primary btn-lg mt-3">Join Tournament →</a>
+      </div>
+
+      <!-- Right Side: Image -->
+      <div class="col-lg-6 col-md-6 text-center">
+        <div class="hero-image">
+          <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1757420491/1f413d25bf3b186f7a36c4150acc44a5e120be7b_p2rr8s.png"
+               alt="Soccer Gladiators" class="img-fluid rounded-circle">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="upcoming-matches py-5">
+  <div class="container-fluid">
+    <div class="row align-items-start">
+      
+      <!-- Left Side -->
+      <div class="col-lg-6 col-md-12 px-5 mb-4 mb-lg-0">
+        <h2 class="section-title text-white mb-4">Upcoming Matches</h2>
+        
+        <!-- Days of the Week Buttons -->
+        <div class="mb-4 days-buttons">
+          <button class="btn btn-day active">Monday</button>
+          <button class="btn btn-day">Tuesday</button>
+          <button class="btn btn-day">Wed</button>
+          <button class="btn btn-day">Thursday</button>
+          <button class="btn btn-day">Friday</button>
+          <button class="btn btn-day">Saturday</button>
+        </div>
+
+        <!-- Semi Final Match Row -->
+<div class="d-flex align-items-center mb-4 semi-final">
+  <div class="gamepad-wrapper me-3">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1757577635/db66c6af4cc31c81b50a3674f8361b6cbdfbe9d6_1_mwqeai.png" 
+         alt="Gamepad" width="40">
+  </div>
+  <h5 class="mb-0 text-white">Semi Final Match</h5>
+</div>
+
+        <!-- Match Header -->
+      
+<div class="match-header d-flex justify-content-between align-items-center mb-2 text-white">
+  <span><i class="far fa-calendar-alt me-1"></i> Date</span>
+  <div class="divider"></div>
+  <span><i class="fas fa-futbol me-1"></i> Match</span>
+  <div class="divider"></div>
+  <span><i class="fas fa-ticket-alt me-1"></i> Ticket Price</span>
+  <div class="divider"></div>
+  <span><i class="fas fa-map-marker-alt me-1"></i> Venue</span>
+</div>
+
+
+        <!-- Match Card 1 -->
+        <div class="match-card d-flex justify-content-between align-items-center p-3 mb-3">
+          <!-- Date -->
+          <div class="match-date text-center">
+            <strong>22 July</strong><br>2020
+          </div>
+
+          <!-- Teams with Logos -->
+          <div class="teams d-flex align-items-center gap-2">
+            <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1757577977/1cb166d4574f9b5d0ae9dd2855eeb2abfa29efc1_1_ngh4p9.png" alt="Man U" class="club-logo">
+            
+            <span class="fw-bold text-white">VS</span>
+            <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1757577986/ac2e8ca456b61cefd3795c2af9c7dc636e575478_1_jczinq.png" alt="Chelsea" class="club-logo">
+           
+          </div>
+
+          <!-- Price -->
+           <div class="ticket text-center">
+    <div class="ticket-price text-white">$29.00</div>
+    <small class="text-secondary">Base Price</small>
+  </div>
+
+          <!-- Venue -->
+          <div class="match-venue text-white">Kimberly Sanders</div>
+
+          <!-- Button -->
+          <button class="btn btn-danger btn-sm">Set Reminder</button>
+        </div>
+
+        <!-- Match Card 2 -->
+        <div class="match-card d-flex justify-content-between align-items-center p-3 mb-3">
+          <div class="match-date text-center">
+            <strong>25 July</strong><br>2020
+          </div>
+          <div class="teams d-flex align-items-center gap-2">
+            <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1757578399/a32c17049672e9c3a2a09527daceb1e612788a72_1_hgium6.png" alt="Man U" class="club-logo">
+      
+            <span class="fw-bold text-white">VS</span>
+            <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1757578400/4c7f50945f0a8ed39a8475e721659f5d3243af61_1_t3teb5.png" alt="Chelsea" class="club-logo">
+   
+          </div>
+   <div class="ticket text-center">
+    <div class="ticket-price text-white">$29.00</div>
+    <small class="text-secondary">Base Price</small>
+  </div>
+          <div class="match-venue text-white">Belinda Bryant</div>
+          <button class="btn btn-danger btn-sm">Set Reminder</button>
+        </div>
+      </div>
+
+      <!-- Right Side Image -->
+      <div class="col-lg-6 col-md-12 p-0">
+        <div class="upcoming-image h-100">
+          <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1757576923/7bf718042e91a72eb04296e6bd5fa0eda3fa8af3_lsxsiz.jpg" 
+               alt="Upcoming Match" class="img-fluid w-100 h-100" style="object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
