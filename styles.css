@@ -87,6 +87,8 @@
   font-weight: 800;
   background: linear-gradient(90deg, #3B82F6, #EF4444, #F97316);
   -webkit-background-clip: text;
+  background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -472,6 +474,313 @@ font-weight: 400;
 font-size: 20px;
 line-height: 125%;
 letter-spacing: 0%;
+}
+
+/* ===============================
+   HOW TO BECOME A GLADIATOR SECTION
+   =============================== */
+.soccer-gladiator-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.soccer-gladiator-section .container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* LEFT SIDE */
+.left-side {
+  background: rgba(16, 24, 38, 1);
+  flex: 1 1 40%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.left-side h1 {
+  font-size: 40px;
+  line-height: 1.2;
+  color: transparent;
+  background: linear-gradient(to right, #0057b7, #ff004d, #9a00c6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0;
+}
+
+/* RIGHT SIDE */
+.right-side {
+  flex: 1 1 60%;
+  background: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 20px;
+  padding: 40px;
+}
+
+.step h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(48, 55, 159, 1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.step h3 span {
+  color: #ff004d;
+}
+
+.step h4 {
+  font-size: 16px;
+  color: rgba(48, 55, 159, 1);
+  margin-top: 5px;
+}
+
+.step p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.82);
+  margin-top: 5px;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 992px) {
+  .soccer-gladiator-section .container {
+    flex-direction: column;
+  }
+
+  .left-side, .right-side {
+    flex: 1 1 100%;
+  }
+
+  .right-side {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .left-side h1 {
+    text-align: center;
+    font-size: 32px;
+  }
+}
+
+/* ===============================
+   GAMERS STORIES SECTION
+   =============================== */
+.gamers-stories {
+  position: relative;
+  background: rgb(36, 33, 33);
+  padding: 64px 20px;
+  color: #fff;
+  overflow: hidden;
+}
 
 
+.quote {
+width: 186px;
+height: 147px;
+opacity: 0.3;
+top: 4742px;
+left: 313px;
+
+
+}
+.real {
+  width: 634px;
+height: 128px;
+range: 0 deg;
+opacity: 1;
+gap: 8px;
+
+
+}
+/* SVG SHAPE BACKGROUND */
+.bg-shape {
+  position: absolute;
+  top: -8%;
+  right: -4%;
+  width: 90%;
+  height: 120%;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(153.05deg, rgba(0, 0, 0, 0.42) 26.32%, rgba(14, 24, 41, 0.08) 95.06%);
+ 
+}
+
+/* CONTENT CONTAINER */
+.gamers-stories .container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+/* LEFT CONTENT */
+.left-content {
+  position: relative;
+  flex: 1 1 40%;
+  min-width: 260px;
+  padding-right: 20px;
+}
+
+.quote-overlay {
+  position: absolute;
+  top: -24px;
+  left: -6px;
+  font-size: 160px;
+  font-weight: 700;
+  color: #9f1732;
+  opacity: 0.18;
+  line-height: 0.8;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.text-content {
+  position: relative;
+  z-index: 3;
+}
+
+.text-content h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.12;
+  color: #fff;
+  margin: 0 0 12px 0;
+}
+
+.text-content p {
+  margin: 0;
+  color: #cfcfd6;
+  font-size: 15px;
+}
+
+/* RIGHT CONTENT (CARDS) */
+.right-content {
+  flex: 1 1 55%;
+  min-width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  align-content: start;
+}
+
+.story-card {
+  background: #fff;
+  color: #0b1630;
+  padding: 20px;
+  border-radius: 10px;
+ 
+  
+}
+
+.story-card h4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+.story-card h4 img.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #eee;
+  flex-shrink: 0; /* Prevents shrinking on small screens */
+}
+
+
+.story-card h4 span {
+  display: inline-block;
+  margin-left: 8px;
+  font-weight: 400;
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.story-card .story-text {
+  font-size: 14px;
+  color: #344054;
+  line-height: 1.6;
+  margin: 6px 0 12px 0;
+}
+
+.story-card h5 {
+  font-size: 13px;
+  margin: 0;
+  font-weight: 700;
+  color: #0b1630;
+}
+
+.story-card.highlight {
+  outline: 3px solid rgba(2,122,255,0.14);
+  outline-offset: 6px;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 992px) {
+  .right-content {
+    grid-template-columns: 1fr;
+  }
+
+  .bg-shape {
+    top: -12%;
+    right: -10%;
+    width: 110%;
+    height: 140%;
+  }
+}
+
+@media (max-width: 700px) {
+  .gamers-stories .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .left-content {
+    order: 1;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .quote-overlay {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -16px;
+    font-size: 120px;
+  }
+
+  .right-content {
+    order: 2;
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .bg-shape {
+    top: -16%;
+    right: -25%;
+    width: 160%;
+    height: 180%;
+  }
 }
