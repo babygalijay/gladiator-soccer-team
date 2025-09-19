@@ -784,3 +784,141 @@ gap: 8px;
     height: 180%;
   }
 }
+/* ===============================
+   CUSTOMISE YOUR TEAM SECTION
+   =============================== */
+
+    body {
+      background: #fff;
+      color: #111;
+      line-height: 1.5;
+    }
+
+    /* ===== CUSTOMISE YOUR TEAM SECTION ===== */
+    .customise-team {
+      position: relative;
+      background: #fff;
+      overflow: hidden;
+      padding: 60px 20px;
+    }
+
+    /* Dark triangle background using vector 28deg */
+    .customise-team::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #0f172a;
+      clip-path: polygon(0 0, 65% 0, 40% 100%, 0 100%);
+      transform: skewX(-28deg);
+      transform-origin: top left;
+      z-index: 1;
+    }
+
+    .customise-team .container {
+      position: relative;
+      z-index: 2;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .customise-team h2 {
+      color: #fff;
+      font-size: 2rem;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      text-align: left;
+    }
+
+    /* Layout: jerseys + instructions side by side */
+    .content-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    /* Jerseys row */
+    .jersey-collection {
+      display: flex;
+      align-items: flex-end;
+      gap: 20px;
+      flex: 1;
+      justify-content: center;
+    }
+
+    .jersey-card img {
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    /* Side jerseys smaller */
+    .jersey-card.small img {
+      width: 150px;
+    }
+
+    .jersey-card.medium img {
+      width: 180px;
+    }
+
+    /* Middle jersey bigger */
+    .jersey-card.active img {
+      width: 280px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      transform: translateY(-20px);
+    }
+
+    .jersey-card img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Instructions */
+    .instructions {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 400px;
+      flex: 1;
+      color: black;
+    }
+
+    .step {
+      background: #fff;
+      padding: 15px;
+      border-left: 5px solid #4ade80;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .step2 {
+      border-left-color: #facc15;
+    }
+
+    .step3 {
+      border-left-color: #a855f7;
+    }
+
+ /* Download Section */
+.download-section {
+  background: #202833;
+  padding: 60px 20px;
+}
+
+ 
+    footer {
+      background-color: #141A26;
+      color: #aaa;
+      padding: 30px 0;
+      text-align: center;
+    }
+    footer a {
+      color: #aaa;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      color: #fff;
+    }
